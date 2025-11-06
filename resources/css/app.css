@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../**/*.vue';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-dark-bg: #1a1a1a;
+    --color-dark-secondary: #2a2a2a;
+    --color-red-accent: #ff3333;
+    --color-red-hover: #ff4d4d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-dark-bg);
+    color: #ffffff;
+    font-family: var(--font-sans);
+}
+
+.bg-dark {
+    background-color: var(--color-dark-bg);
+}
+
+.bg-dark-secondary {
+    background-color: var(--color-dark-secondary);
+}
+
+.text-red-accent {
+    color: var(--color-red-accent);
+}
+
+.bg-red-accent {
+    background-color: var(--color-red-accent);
+}
+
+.bg-red-accent:hover {
+    background-color: var(--color-red-hover);
+}
+
+.border-red-accent {
+    border-color: var(--color-red-accent);
+}
