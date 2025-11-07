@@ -26,6 +26,7 @@ class EmployeeController extends Controller
         return response()->json([
             'employee' => [
                 'id' => $employee->id,
+                'employee_code' => $employee->employee_code,
                 'first_name' => $employee->first_name,
                 'last_name' => $employee->last_name,
                 'display_name' => $employee->display_name

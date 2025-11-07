@@ -21,11 +21,15 @@
             @logout="logout"
         ></location-selection>
 
-        <pos-main 
-            v-if="currentScreen === 'pos'" 
+        <pos-main
+            v-if="currentScreen === 'pos'"
             :employee="employee"
             :location="location"
             @cart-update="updateCart"
+            @payment-method-selected="handlePaymentMethodSelected"
+            @cash-payment-details="handleCashPaymentDetails"
+            @transaction-completed="handleTransactionCompleted"
+            @payment-cancelled="handlePaymentCancelled"
             @logout="logout"
         ></pos-main>
     </div>

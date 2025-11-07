@@ -19,8 +19,13 @@ class CategorySeeder extends Seeder
         ]);
 
         Category::create([
-            'name' => 'Kiosk',
+            'name' => 'Gutscheine',
             'sort_order' => 2,
+        ]);
+
+        Category::create([
+            'name' => 'Kiosk',
+            'sort_order' => 3,
         ]);
     }
 }
